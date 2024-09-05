@@ -14,10 +14,12 @@ const TagPage = () => {
       <Header />
       <div className="flex gap-3 justify-center mt-8 p-2 -mb-4">
         <div className="flex gap-2 w-[50vw]">
-          <button className="btn" onClick={()=> navigate(-1)}>Back</button>
+          <button className="btn" onClick={() => navigate(-1)}>
+            Back
+          </button>
           <h className="text-xl font-bold">
-            Blogs tagged
-            <span className="text-blue-600 underline">{` #${location.pathname
+            Blogs tagged<span> </span>
+            <span className="text-blue-600 underline">{`#${location.pathname
               .split("/")
               .at(-1)
               .replaceAll("-", " ")}`}</span>
